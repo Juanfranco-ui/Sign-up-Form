@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project: Sign up form</title>
+  </head>
+
+  <body>
+    <div class="image-side">
+      <div class="odin-logo"></div>
+      <figure>
+        <figcaption>
+          Photo by
+          <a href="https://unsplash.com/@wu_hua_jiang">Hongjin Wang</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="content-side">
+      <section class="signup-section">
+        <div class="beforeForm">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p class="sep">You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-wrapper">
+          <form action="#" method="post" id="signupForm">
+            <fieldset>
+              <legend>Let's do this!</legend>
+              <div class="form-item">
+                <label class="form-label" for="firstName">first name</label>
+                <input type="text" id="firstName" placeholder="Thor" required />
+              </div>
+              <div class="form-item">
+                <label class="form-label" for="lastName">last name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  placeholder="Odinson"
+                  required
+                />
+              </div>
+              <div class="form-item">
+                <label class="form-label" for="email">email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-item">
+                <label class="form-label" for="phoneNumber">phone number</label>
+                <input type="tel" pattern="[0-9]*" inputmode="numeric" required />
+              </div>
+              <div class="form-item">
+                <label class="form-label" for="password">password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="form-item">
+                <label class="form-label" for="confirmPassword">
+                  confirm password</label
+                >
+                <input type="password" id="confirmPassword" name="password" required />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <button type="submit">Create Account</button>
+        <p class="login">Already have an account? <a href="#">Log in</a></p>
+      </section>
+    </div>
+  </body>
+</html>
